@@ -1,0 +1,9 @@
+auto: true
+permalink: /blog/:year/:month/:day/:title
+pygments: true     
+permalink: pretty
+baseurl: / 
+exclude:
+- README.md
+- Rakefile
+- img-src

@@ -1,4 +1,0 @@
-website
-=======
-
-Public openETCS Website
