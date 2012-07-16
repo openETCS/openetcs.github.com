@@ -1,0 +1,62 @@
+div#blog-posts-container {
+  border: 1px solid #d9d9d9;
+  margin: 60px 0 0 0;
+  padding: 30px 0 40px 0;
+  background: -moz-radial-gradient(left 45deg, circle farthest-side, white, #e5e5e5);
+  background: -webkit-gradient(radial, center center, 80, center center, 400, from(#fff), to(#e5e5e5));
+  background: -webkit-radial-gradient(center, #fff, #e5e5e5); /* new webkit syntax */
+  background: -o-radial-gradient(center, #fff, #e5e5e5); 
+  background: -ms-radial-gradient(center, #fff, #e5e5e5);
+  background: radial-gradient(center, circle farthest-side, #fff, #e5e5e5); /* W3C Standard */  
+  min-height: 200px;
+}
+
+div#blog-posts-container > a.rssIcon {
+  position: relative;
+  float: left;
+  left: 30px;
+  top: -4px;
+  opacity: 0.6;
+}
+
+div#blog-posts-container > a.rssIcon > img {
+  height: 25px;
+}
+
+div#blog-posts-container > a.rssIcon:hover {
+  opacity: 1;
+}
+
+div#blog-posts-container > h2 { 
+	margin-top: 0;
+  font-size: 30px;
+  font-weight: normal;
+  color: #34332F;
+  padding: 0 0 30px 93px;
+  margin-top: 0;
+  line-height: inherit;
+}
+
+div#blog-posts > .rssBody > ul > li {
+  list-style: none;
+  width: 210px;
+  float: left;
+  padding: 0 22px 0 93px;
+  margin: 0;
+}
+
+div#blog-posts > .rssBody > ul > li > h3 {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
+div#blog-posts > .rssBody > ul > li > h3 > a {
+  font-weight: normal;
+}
+
+div#blog-posts > .rssBody > ul > li > p {
+  padding: 0;
+  margin: 0;
+}

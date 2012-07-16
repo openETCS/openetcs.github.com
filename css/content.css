@@ -1,0 +1,225 @@
+/* Main Banne ron start page (RAP mobile architecture overview) */
+
+div#main-banner {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+div#main-banner > ul {
+  padding-top: 10px;
+}
+
+div#main-banner > ul > li {
+  color: #7a7a7a;
+  margin: 0;
+  padding: 0;
+  list-style-image: none; 
+  list-style-type: none; 
+  font-size: 16px;
+}
+
+    
+
+/* Slideshow on most pages */
+
+div#slideshow {
+  position: relative;
+  padding: 29px 0 29px 0;
+  margin-bottom: 10px;
+}
+
+div#slideshow > h1,
+div#slideshow > p {
+  padding-left: 0;
+  margin-left: 0;
+} 
+
+
+div#demo-box > h2,
+div#demo-box > p {
+  padding-left: 10px;
+}  
+
+#slideshow > h1 {
+  color: #34332F;
+  font-size: 40px;
+  line-height: normal;
+}
+
+#slideshow > p {
+  color: #34332F;
+  font-size: 23px;
+  line-height: normal;
+}
+
+/* Feature boxes in start page */
+
+div.antifloat {
+  clear: both;
+}
+
+div.feature > div.feature-description {
+  padding: 0 0 0 70px;
+} 
+
+
+div.demo-box > div.demo-description {
+  padding: 0 0 0 30px;
+}
+
+div.feature {
+  display: block;
+  font-weight: normal;
+  background-color: transparent;
+  list-style: none;
+  min-height: 200px;
+  min-width: 200px;
+  padding-left: 15px; 
+  padding-right: 15px; 
+  padding-top: 30px; 
+  padding-bottom: 30px; 
+}  
+
+div.demo-box {
+  display: block;
+  font-weight: normal;
+  background-color: transparent;
+  list-style: none;
+  min-height: 200px;
+  min-width: 200px;
+  padding-left: 15px; 
+  padding-right: 15px; 
+  padding-top: 30px; 
+  padding-bottom: 30px; 
+} 
+
+div.demo-box code {
+  padding: 0px;  
+  border: none; 
+  background-color: transparent;
+  font-family: monospace;
+}    
+
+div.feature p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+div.feature h2 {
+  color: #34332F;
+  font-size: 28px;
+  font-weight: normal;
+  padding: 0 0 20px 0;
+}
+
+div.feature > div.icon {
+  float: left;
+  width: 52px;
+  height: 63px;
+}
+
+div.feature > div.icon {
+  background-image: url( "/images/features-sprite.png" );
+}
+
+div.feature > div#ui-kit {
+  background-position: 0 0;
+}
+
+div.feature > div#data-access {
+  background-position: -156px 0;
+}
+
+div.feature > div#security {
+  background-position: -260px 0;
+}
+
+div.feature > div#cross-plattform {
+  background-position: -208px 0;
+}
+
+div.feature > div#tool-support {
+  background-position: -52px 0;
+}
+
+div.feature > div#integration {
+  background-position: -104px 0;
+} 
+
+/* GETTING STARTED */  
+
+div.feature > div.icon-gs {
+  float: left;
+  width: 52px;
+  height: 63px;
+  background-image: url( "/images/gs-sprite.png" );
+}
+
+div.feature > div#download {
+  background-position: 0 0;
+}
+
+div.feature > div#run-server {
+  background-position: -52px 0;
+}
+
+div.feature > div#run-client {
+  background-position: -104px 0;
+}
+
+div.feature > div#code-debug {
+  background-position: -156px 0;
+}
+
+div.feature > div#learn {
+  background-position: -208px 0;
+}
+
+div.feature > div#need-help {
+  background-position: -260px 0;
+} 
+
+  
+/* Epand Items on Download Page */
+
+div.expand-head {
+  margin: 0;
+}
+
+div.expand-link,
+div.download-button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #f5f4e9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 5px;
+}
+
+div.expand-link {
+  padding: 1px 10px 8px 5px;
+  margin-right: 10px;
+}
+
+div.download-button.hover {
+  background-color: #e8e7dd;
+}
+
+div.expand-link.selected {
+  background-color: #e8e7dd;
+  border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  padding-bottom: 11px;
+}
+
+div.expand-body {
+  display: none;
+  border: 2px solid #e8e7dd;
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}

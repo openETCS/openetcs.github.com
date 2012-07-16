@@ -1,8 +1,7 @@
 auto: true
 permalink: /blog/:year/:month/:day/:title
 pygments: true     
-permalink: pretty
-baseurl: / 
+permalink: pretty 
 exclude:
 - README.md
 - Rakefile

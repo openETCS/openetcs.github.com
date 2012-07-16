@@ -1,0 +1,34 @@
+---
+layout: default
+title: openETCS Projects 
+---
+<div id="slideshow">
+  <h1>
+    Find information about all openETCS  projects. 
+  </h1>
+  <p>
+    Every project has its own project page, containing information on mailing lists, source code, project information (wiki) and issues.
+  </p>
+  <p>
+  <ul id="plist">
+  </ul>
+  </p>
+<script>
+$.ajax({
+    url:'https://api.github.com/orgs/open-etcs/repos',
+    type:'GET',
+    dataType: 'json',
+    success: function( json ) {
+        $.each(json, function(i, value) {
+            $('#plist').append($('<li>').text(value.name)).append($('<p>').text(value.description));
+            $('#plist').append($('<a>').attr('href',value.html_url).text(value.html_url));
+        });
+    }
+});
+</script>
+
+<p>
+You can also have a look at the <a href="https://github.com/open-ETCS">open-ETCS overview page</a> on github, providing information on activity of all projects.
+</p>
+</div>
+

@@ -1,0 +1,166 @@
+@media (max-width: 480px) {   
+  
+  div#logo {
+    margin-top: 10px;
+    width: 270px;
+    height: 38px;
+  }  
+  
+  div#header {
+    min-height: 90px;
+  } 
+  
+  div#header-top-row {
+    min-height: 90px;
+  } 
+  
+  div#header-bottom-row {
+    display: none;
+  }
+  
+  div#menu {
+    z-index: 1000;
+    margin-top: 10px; 
+    margin-left: 0px;
+  }  
+  
+  div#menu ul {
+    text-align: left;  
+  }  
+  
+  div#menu > ul > li > a {
+    padding: 3px 8px;
+    margin: 0 2px;
+  }  
+  
+  div#menu > ul > li:hover > a {
+    padding: 2px 7px; 
+  }
+  
+  div#menu h3 {
+    font-size: 15px;
+  }  
+  
+  .second-level-nav > li {  
+    font-size: 10pt;
+  } 
+  
+  .second-level-nav {
+    width: auto;
+    top: 26px;
+    left: 2px;
+  } 
+  
+  .second-level-nav > li > a {
+    padding: 4px 10px 4px 12px !important;
+  }  
+  
+  div#slideshow {
+    padding: 9px 0 9px 0;
+    margin-bottom: 0px;
+  }
+  
+  div#slideshow > h1 {
+    font-size: 17px;
+  }
+
+  div#slideshow > p {
+    font-size: 15px;
+  } 
+  
+  div.feature h2 {
+    font-size: 16px; 
+    font-weight: bold;
+    padding: 0 0 20px 0;
+  }
+  
+  div.feature p {
+    font-size: 15px;
+  }    
+  
+  div.demo-box h2 {
+    font-size: 15px; 
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+  }
+  
+  div.demo-box p {
+    font-size: 15px; 
+  }
+  
+  div#blog-posts-container {
+    margin: 30px 0 0 0;
+    padding: 30px 0 10px 0;
+  } 
+  
+  div#blog-posts-container > h2 { 
+    font-size: 15px;
+    font-weight: bold;  
+    padding: 0 0 10px 60px;
+  }
+  
+  div#blog-posts > .rssBody > ul > li > h3 {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 0 3px 0; 
+  }
+  
+  div#blog-posts > .rssBody > ul > li {
+    list-style: none;
+    float: left;
+    padding: 0 22px 0 10px;
+    margin: 0;
+  }
+  
+  div#blog-posts > .rssBody > ul > li > p {
+    font-size: 14px;
+    padding: 0 0 10px 0; 
+  }    
+  
+  h1 {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }  
+  
+  h2 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-weight: bold;    
+  }
+
+  h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-weight: bold;    
+  }
+
+  h4 {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-weight: bold;    
+  }   
+  
+  div, p, blockquote, pre, code, em, sub, sup, dl, dt, dd, ol, ul, li,
+  fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  {
+    font-size: 15px;
+  }
+  
+  div#content {
+    padding-top: 0px;
+  }
+  
+  #footer {
+    padding: 10px 0 0 0;
+    margin-top: 20px;
+    min-height: 70px;
+  }
+  
+  #copyright {
+    display: none;    
+  }
+    
+}

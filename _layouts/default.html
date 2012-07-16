@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>openETCS - {{ page.title }}</title>       
+  
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="etcs, openetcs, openproof" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <meta name="apple-mobile-web-app-capable" content="yes" />    
+  
+  <link rel="shortcut icon" href="/images/favicon.png" />
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />  
+  
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />   
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/layout.css" />            
+  <link rel="stylesheet" type="text/css" href="/css/blog.css" /> 
+  <link rel="stylesheet" type="text/css" href="/css/content.css" />  
+  <link rel="stylesheet" type="text/css" href="/css/layout-responsive.css" />
+
+
+  <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.zrssfeed.min.js"></script>
+  <script type="text/javascript" src="/js/menu.js"></script>    
+  
+</head>
+<body>
+  <div id="header">
+    <div id="header-top-row">
+      <div class="container"> 
+        <div class="row">
+          <div class="span4 offset1">
+            <a href="/"><div id="logo">openETCS</div></a> 
+          </div> 
+          <div id="menu" class="span6 offset1"> 
+            <ul id="navigation">
+              <li>
+                <a href="/projects/">
+                  <h3>Projects</h3>
+                </a>
+              </li>
+              <li>
+                <a href="/principles/">
+                  <h3>Principles</h3>
+                </a>
+               <ul class="second-level-nav">
+                  <li>
+                    <a href="/principles/">
+                      Open Source
+                    </a>
+                  </li> 
+                  <li>
+                    <a href="/principles/resources/">
+                      Resources
+                    </a>
+                  </li>                
+                </ul>
+              </li>
+              <li>
+                 <a href="/members/">
+                  <h3>Members</h3>
+                </a>
+              </li>
+              <li>
+                 <a href="/about/">
+                  <h3>About</h3>
+                </a>
+                <ul class="second-level-nav">
+                  <li> 
+                    <a href="/about/">
+                     Who we are 
+                    </a>
+                  </li> 
+                   <li>
+                    <a href="/contact/">
+                     Contact 
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul> 
+          </div>
+        </div>
+      </div>
+    </div>   
+    
+    <div id="header-bottom-row">
+      <div class="container">
+        <div class="row">
+          <div id="breadcrumb-container" class="span11 offset1">
+            <ul id="breadcrumb">
+              <li><a href="http://openetcs.info/">Home</a></li>   
+              {% if page.url != '/index.html' %}
+                 <li><a href="{{page.url}}">{{page.title}}</a></li>
+              {% endif %}            
+            </ul>
+          </div>
+        </div>  
+      </div>
+    </div>    
+    
+  </div>                         
+
+
+  <div class="container">  
+    <div class="row">
+      <div id="content" class="span10 offset1">
+        {{ content }}
+      </div>         
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">  
+      <div id="footer" class="span10 offset1">
+        <ul id="footernav">
+          <li><a href="/about/">About</a></li>
+          <li><a href="/imprint/">Imprint</a></li>
+          <li><a href="/about/terms-of-use/">Terms of Use</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <span id="copyright">Copyright &copy; 2012 EclipseSource & others. All Rights Reserved.</span>   
+      </div>
+    </div>
+  </div> 
+  
+</body>
+</html>
