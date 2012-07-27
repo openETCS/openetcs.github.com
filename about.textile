@@ -1,0 +1,11 @@
+---
+layout: default
+title: About RAP mobile
+---
+<div id="slideshow">
+  <h1>About openETCS</h1>
+  <p>
+    openETCS is a project, not an organisation. The goal of the project is an "Open Proof" for the European Train Control System.
+  </p>
+</div> 
+
