@@ -32,7 +32,7 @@ div#blog-posts-container > h2 {
   font-size: 30px;
   font-weight: normal;
   color: #34332F;
-  padding: 0 0 30px 93px;
+  padding: 0 0 30px 13px;
   margin-top: 0;
   line-height: inherit;
 }
@@ -41,7 +41,7 @@ div#blog-posts > .rssBody > ul > li {
   list-style: none;
   width: 210px;
   float: left;
-  padding: 0 22px 0 93px;
+  padding: 0 22px 0 0px;
   margin: 0;
 }
 
