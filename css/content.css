@@ -13,12 +13,12 @@ div#main-banner > ul > li {
   color: #7a7a7a;
   margin: 0;
   padding: 0;
-  list-style-image: none; 
-  list-style-type: none; 
+  list-style-image: none;
+  list-style-type: none;
   font-size: 16px;
 }
 
-    
+
 
 /* Slideshow on most pages */
 
@@ -32,13 +32,13 @@ div#slideshow > h1,
 div#slideshow > p {
   padding-left: 0;
   margin-left: 0;
-} 
+}
 
 
 div#demo-box > h2,
 div#demo-box > p {
   padding-left: 10px;
-}  
+}
 
 #slideshow > h1 {
   color: #34332F;
@@ -60,7 +60,7 @@ div.antifloat {
 
 div.feature > div.feature-description {
   padding: 0 0 0 70px;
-} 
+}
 
 
 div.demo-box > div.demo-description {
@@ -74,11 +74,11 @@ div.feature {
   list-style: none;
   min-height: 200px;
   min-width: 200px;
-  padding-left: 15px; 
-  padding-right: 15px; 
-  padding-top: 30px; 
-  padding-bottom: 30px; 
-}  
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 div.demo-box {
   display: block;
@@ -87,18 +87,18 @@ div.demo-box {
   list-style: none;
   min-height: 200px;
   min-width: 200px;
-  padding-left: 15px; 
-  padding-right: 15px; 
-  padding-top: 30px; 
-  padding-bottom: 30px; 
-} 
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 div.demo-box code {
-  padding: 0px;  
-  border: none; 
+  padding: 0px;
+  border: none;
   background-color: transparent;
   font-family: monospace;
-}    
+}
 
 div.feature p {
   margin: 0;
@@ -145,9 +145,9 @@ div.feature > div#tool-support {
 
 div.feature > div#integration {
   background-position: -104px 0;
-} 
+}
 
-/* GETTING STARTED */  
+/* GETTING STARTED */
 
 div.feature > div.icon-gs {
   float: left;
@@ -178,9 +178,9 @@ div.feature > div#learn {
 
 div.feature > div#need-help {
   background-position: -260px 0;
-} 
+}
 
-  
+
 /* Epand Items on Download Page */
 
 div.expand-head {
@@ -222,4 +222,123 @@ div.expand-body {
   border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
+}
+
+
+
+
+
+/*OVERRIDDEN STYLES*/
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    line-height: 1.5 !important;
+    font-size: 16px;
+}
+
+div#header {
+    margin: 20px 20px 0 20px;
+    padding-top:15px;
+    border-top: 2px solid #2c548e;
+    min-height: 0;
+}
+
+div#header-top-row {
+    background-color: transparent;
+    min-height: 0;
+}
+
+div#menu {
+    margin: 0;
+}
+
+div#menu h3 {
+    color: #2c548e;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+div#menu > ul > li:hover > a {
+    border-color: transparent;
+}
+
+div#menu > ul > li > a.active h3 {
+    color: #2c548e;
+}
+
+div#menu > ul > li > a:hover {
+    border-color: transparent;
+    border-bottom: 1px solid #2c548e;
+}
+
+div#menu > ul > li > a:hover h3 {
+    color: #2c548e;
+}
+
+h1, #slideshow > h1 {
+    font-size: 28px;
+    line-height: 1.5
+}
+
+div.feature h2 {
+    font-size: 24px;
+    padding-bottom: 0;
+}
+
+#slideshow > p {
+    font-size: 16px;
+    line-height: 1.5
+}
+
+div#slideshow {
+    position: relative;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+div.events {
+    border-left: 1px solid #989898;
+    padding-left: 20px;
+    margin-left: 105px;
+}
+
+div.events h2 {
+    color: #989898;
+    padding-bottom: 30px;
+    font-weight: normal;
+}
+
+div.events h3 {
+    color: #989898;
+}
+
+div.events p {
+    color: #989898;
+    font-size: 14px;
+}
+
+div.events ul {
+    margin-left: -25px
+}
+
+div#content div.events ul li {
+    list-style-image: none;
+    list-style-type: none;
+    background:  url( img/list-bullet-events.png ) left center no-repeat;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+a {
+    color: #2c548e;
+}
+
+div#blog-posts > .rssBody > ul > li > h3 {
+    color: #2c548e;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+div.feature.span3 {
+    padding-left: 0;
 }

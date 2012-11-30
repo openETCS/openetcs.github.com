@@ -1,5 +1,4 @@
 body {
-  background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   color: #34332f;
 }
@@ -9,7 +8,7 @@ div#header {
 }
 
 div#header-top-row {
-  background-color: #6D6D6D; 
+  background-color: #6D6D6D;
   min-height: 110px;
 }
 
@@ -24,25 +23,25 @@ div#logo {
   height: 49px;
   font-size: 3em;
   color: white;
-} 
+}
 
 div#es-logo-parent {
-  position: absolute; 
-  right:0px; 
+  position: absolute;
+  right:0px;
   margin-right: 20px;
 }
 
 
 div#menu {
   z-index: 1000;
-  margin-top: 56px; 
-  color: white; 
-} 
+  margin-top: 56px;
+  color: white;
+}
 
 div#menu ul {
-  text-align: right; 
-  margin-left: 0; 
-  z-index: 1001; 
+  text-align: right;
+  margin-left: 0;
+  z-index: 1001;
 }
 
 div#menu > ul > li {
@@ -50,7 +49,7 @@ div#menu > ul > li {
   display: inline-block;
   list-style-type: none;
   padding: 0;
-  margin: 0;   
+  margin: 0;
 }
 
 div#menu > ul > li > a {
@@ -82,7 +81,7 @@ div#menu > ul > li > a.active h3 {
 
 div#menu > ul li.selected > h3 {
   color: #393939;
-} 
+}
 
 .second-level-nav {
   display: none;
@@ -99,7 +98,7 @@ div#menu > ul li.selected > h3 {
 }
 
 .second-level-nav > li {
-  display: block;  
+  display: block;
   text-align: left;
   padding: 0 !important;
   margin: 0 !important;
@@ -132,7 +131,7 @@ div#menu > ul li.selected > h3 {
   cursor: pointer;
 }
 
-#breadcrumb-container { 
+#breadcrumb-container {
   padding
   height: 33px;
 }
@@ -174,13 +173,13 @@ div#breadcrumb-container li > a {
 }
 
 ul#breadcrumb > li > a {
-  background: no-repeat url( "/images/breadcrumb_arrow.png" ) right center ; 
+  background: no-repeat url( "/images/breadcrumb_arrow.png" ) right center ;
   margin-right: 10px;
 }
 
 ul#breadcrumb > li:last-child > a {
   background: none;
-}    
+}
 
 #footer {
   color: #34332F;
@@ -210,29 +209,28 @@ ul#breadcrumb > li:last-child > a {
   padding-right: 20px;
   clear: none;
   float: right;
-} 
+}
 
 div, p, blockquote, pre, code, em, sub, sup, dl, dt, dd, ol, ul, li,
 fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td
 {
   color: #34332F;
-  font-size: 14px;
-  line-height: 18px; 
-  font-family: 'Open Sans', sans-serif; 
+  font-size: 16px;
+  line-height: 1.5
 }
 
 div#content {
   min-height: 100%; /* gives layout 100% height */
   padding-top: 25px;
   background: white;
-}  
+}
 
 div#content li {
   list-style-image: url( "/images/list-bullet.png" );
   list-style-position: outside;
   margin-left: 0;
   padding: 5px 10px 5px 0;
-}  
+}
 
 a {
   color: #226dc7;
@@ -241,10 +239,10 @@ a {
   font-size: inherit;
 }
 
-a:hover { 
+a:hover {
   color: #226dc7;
   text-decoration: underline;
-}       
+}
 
 em {
   font-style: italic;
