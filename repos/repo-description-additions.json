@@ -1,0 +1,32 @@
+[
+  {
+    "name" : "template",
+    "mailinglist" : "",
+    "incubating" : true
+  },
+  {
+    "name" : "playground",
+    "mailinglist" : "",
+    "incubating" : true
+  },
+  {
+    "name" : "management",
+    "description" : "Work Package 1 Top Level Project",
+    "html_url" : "https://github.com/openETCS/management"
+  },
+  {
+    "name" : "toolchain",
+    "description" : "Work Package 3a Top Level Project",
+    "html_url" : "https://github.com/openETCS/toolchain"
+  },
+  {
+    "name" : "validation",
+    "description" : "Work Package 4 Top Level Project",
+    "html_url" : "https://github.com/openETCS/validation"
+  },
+  {
+    "name" : "dissemination",
+    "description" : "Work Package 6 Top Level Project",
+    "html_url" : "https://github.com/openETCS/validation"
+  }
+]

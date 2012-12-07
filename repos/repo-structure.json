@@ -1,0 +1,29 @@
+[
+  {
+    "name" : "toolchain",
+    "children" :
+    [
+      {
+        "name" : "ecosystem",
+        "children" :
+        [
+          {
+            "name" : "template"
+          },
+          {
+            "name" : "playground"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name" : "management",
+    "children" :
+    [
+      {
+        "name" : "openetcs.github.com"
+      }
+    ]
+  }
+]

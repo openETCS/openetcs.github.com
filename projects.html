@@ -9,26 +9,52 @@ title: openETCS Projects
   <p>
     Every openETCS project has its own project page, containing information on mailing lists, source code, project information (wiki) and issues. Projects, which are initially private, may not be listed.
   </p>
-  <ul id="plist">
-<li><p>Management</p><p>Work Package 1 Top Level Project</p><p><a href="https://github.com/openETCS/management">https://github.com/openETCS/management</a></p></li>
-<li><p>Requirements</p><p>Work Package 2 Top Level Project</p><p><a href="https://github.com/openETCS/requirements">https://github.com/openETCS/requirements</a></p></li>
-<li><p>Toolchain</p><p>Work Package 3a Top Level Project</p><p><a href="https://github.com/openETCS/toolchain">https://github.com/openETCS/toolchain</a></p></li>
-<li><p>Validation</p><p>Work Package 4 Top Level Project</p><p><a href="https://github.com/openETCS/validation">https://github.com/openETCS/validation</a></p></li>
-<li><p>Dissemination</p><p>Work Package 6 Top Level Project</p><p><a href="https://github.com/openETCS/dissemination">https://github.com/openETCS/validation</a></p></li>
-
-  </ul>
+  <ul id="plist"></ul>
 <script>
-$.ajax({
-    url:'/repos',
-    type:'GET',
-    dataType: 'json',
-    success: function( json ) {
-        $.each(json, function(i, value) {
-            $('#plist').append($('<li>').text(value.name)).append($('<p>').text(value.description));
-            $('#plist').append($('<a>').attr('href',value.html_url).text(value.html_url));
-        });
+  function appendProjects( projectList, repoDescription ) {
+    for( var i = 0; i < repoDescription.length; i++ ) {
+      var repo = repoDescription[ i ];
+      var projectItem = $( "<li></li>" );
+      projectItem.append( "<h2>" + repo[ "name" ] + "</h2>" );
+      if( repo[ "description" ] ) {
+        projectItem.append( "<p>" + repo[ "description" ] + "</p>" );
+      }
+      if( repo[ "private" ] ) {
+        projectItem.append( "<p>This repository is private.</p>" );
+      }
+      if( repo[ "has_wiki" ] ) {
+        projectItem.append( "<p>This project has a wiki.</p>" );
+      }
+      if( repo[ "open_issues_count" ] ) {
+        projectItem.append( "<p>Open issues: " + repo[ "description" ] + "</p>" );
+      }
+      if( repo[ "mailinglist" ] ) {
+        projectItem.append( "<p>Mailinglist: " + repo[ "description" ] + "</p>" );
+      }
+      if( repo[ "incubating" ] ) {
+        projectItem.append( "<p>This project currently is in incubator status.</p>" );
+      }
+      if( repo[ "html_url" ] ) {
+        projectItem.append( "<a href='" + repo[ "html_url" ] + "'>Go to project repository on github</a>" );
+      }
+      projectList.append( projectItem );
+      if( repo[ "children" ] ) {
+        var subList = $( "<ul></ul>" );
+        projectItem.append( subList );
+        appendProjects( subList, repo[ "children" ] );
+      }
     }
-});
+  }
+
+  $.ajax({
+      url:'/repos/repo-description-merged.json',
+      type:'GET',
+      dataType: 'json',
+      success: function( repoDescription ) {
+        appendProjects( $( "#plist" ), repoDescription );
+      }
+  });
+
 </script>
 
 <p>

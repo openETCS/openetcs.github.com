@@ -342,3 +342,12 @@ div#blog-posts > .rssBody > ul > li > h3 {
 div.feature.span3 {
     padding-left: 0;
 }
+
+div#content #plist li {
+  background: rgba( 0,0,0,0.05 );
+  list-style-type: none;
+  list-style-image: none;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
