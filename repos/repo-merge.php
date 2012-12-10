@@ -1,22 +1,27 @@
 <?php
 
-$result = json_decode( file_get_contents( "repo-structure.json" ), true );
-$githubDescription = json_decode( file_get_contents( "repo-description-github.json" ), true );
-$additionalDescription = json_decode( file_get_contents( "repo-description-additions.json" ), true );
+$result = readJsonAsArray( "repo-structure.json" );
+mergeRepositoryData( $result, readJsonAsArray( "repo-description-github.json" ) );
+mergeRepositoryData( $result, readJsonAsArray( "repo-description-additions.json" ) );
 
-$found = false;
-function findAndInsert( &$repoDescription, $newRepo ) {
-  foreach( $repoDescription as &$repo ) {
-    if( $repo[ "name" ] === $newRepo[ "name" ] ) {
-      $repo = array_merge( $newRepo, $repo );
-      $GLOBALS[ "found" ] = true;
-    } elseif( isset( $repo[ "children" ] ) ) {
-      findAndInsert( $repo[ "children" ], $newRepo );
-    }
+file_put_contents(
+  "repo-description-merged.json",
+  json_encode( $result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES )
+);
+
+# helpers
+function readJsonAsArray( $fileName ) {
+  return json_decode( file_get_contents( $fileName ), true );
+}
+
+function mergeRepositoryData( array &$mergeTarget, array $mergeSource ) {
+  foreach( $mergeSource as $repo ) {
+    addRepo( $mergeTarget, $repo );
   }
 }
 
-function addRepo( &$repoDescription, $newRepo ) {
+$found = false;
+function addRepo( array &$repoDescription, array $newRepo ) {
   $GLOBALS[ "found" ] = false;
   findAndInsert( $repoDescription, $newRepo );
   if( !$GLOBALS[ "found" ] ) {
@@ -24,17 +29,16 @@ function addRepo( &$repoDescription, $newRepo ) {
   }
 }
 
-foreach( $githubDescription as $repo ) {
-  addRepo( $result, $repo );
+function findAndInsert( array &$repoDescription, array $newRepo ) {
+  foreach( $repoDescription as &$repo ) {
+    if( $repo[ "name" ] === $newRepo[ "name" ] ) {
+      $repo = array_merge( $newRepo, $repo );
+      $GLOBALS[ "found" ] = true;
+      break;
+    } elseif( isset( $repo[ "children" ] ) ) {
+      findAndInsert( $repo[ "children" ], $newRepo );
+    }
+  }
 }
-
-foreach( $additionalDescription as $repo ) {
-  addRepo( $result, $repo );
-}
-
-file_put_contents(
-  "repo-description-merged.json",
-  json_encode( $result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES )
-);
 
 ?>
