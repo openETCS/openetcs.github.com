@@ -351,3 +351,8 @@ div#content #plist li {
   padding: 10px;
   border-radius: 10px;
 }
+
+.projectItem > span,
+.projectItem> a {
+    padding-right: 5px;
+}

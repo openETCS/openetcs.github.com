@@ -14,28 +14,28 @@ title: openETCS Projects
   function appendProjects( projectList, repoDescription ) {
     for( var i = 0; i < repoDescription.length; i++ ) {
       var repo = repoDescription[ i ];
-      var projectItem = $( "<li></li>" );
+      var projectItem = $( "<li class='projectItem'></li>" );
       projectItem.append( "<h2>" + repo[ "name" ] + "</h2>" );
       if( repo[ "description" ] ) {
         projectItem.append( "<p>" + repo[ "description" ] + "</p>" );
       }
       if( repo[ "private" ] ) {
-        projectItem.append( "<p>This repository is private.</p>" );
-      }
-      if( repo[ "has_wiki" ] ) {
-        projectItem.append( "<p>This project has a wiki.</p>" );
-      }
-      if( repo[ "open_issues_count" ] ) {
-        projectItem.append( "<p>Open issues: " + repo[ "description" ] + "</p>" );
-      }
-      if( repo[ "mailinglist" ] ) {
-        projectItem.append( "<p>Mailinglist: " + repo[ "description" ] + "</p>" );
+        projectItem.append( "<span class='icon-lock' title='This project is private'></span>" );
       }
       if( repo[ "incubating" ] ) {
-        projectItem.append( "<p>This project currently is in incubator status.</p>" );
+        projectItem.append( "<span class='icon-beaker' title='This project currently is in incubator status'></span>" );
+      }
+      if( repo[ "has_wiki" ] ) {
+        projectItem.append( "<span class='icon-info-sign' title='This project has a wiki'></span>" );
+      }
+      if( repo[ "open_issues_count" ] ) {
+        projectItem.append( "<span title='open issues: " + repo[ "open_issues_count" ] + "' style='color:rgb(200,0,0)'><span class='icon-github'></span>" + repo[ "open_issues_count" ] + "</span>" );
+      }
+      if( repo[ "mailinglist" ] ) {
+        projectItem.append( "<a title='mailing list' href='" + repo[ "mailinglist" ] + "'><span class='icon-envelope'></span></a>" );
       }
       if( repo[ "html_url" ] ) {
-        projectItem.append( "<a href='" + repo[ "html_url" ] + "'>Go to project repository on github</a>" );
+        projectItem.append( "<a href='" + repo[ "html_url" ] + "'><span title='Go to project repository on github' class='icon-external-link'></span></a>" );
       }
       projectList.append( projectItem );
       if( repo[ "children" ] ) {
