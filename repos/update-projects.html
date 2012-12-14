@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update Repo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script>
+
+      $( document ).ready( function() {
+
+        var repoDescription = [];
+        var insertLater = [];
+
+        $.ajax( {
+          url :'/repos/repo-description-additions.json',
+          type :'GET',
+          dataType : 'json',
+          success : function( repos ) {
+            updateRepoDescription( repoDescription, repos );
+          },
+          error: function( err ) {
+            alert( "Es ist ein Fehler aufgetreten. Bitte überprüfen Sie die Projektbeschreibung." );
+          }
+        } );
+
+        $.ajax( {
+          url :'/repos/repo-description-github.json',
+          type :'GET',
+          dataType : 'json',
+          success : function( repos ) {
+            updateRepoDescription( repoDescription, repos );
+            $( "#json-output" ).append( JSON.stringify( repoDescription ) );
+          }
+        } );
+
+        function updateRepoDescription( repoDescription, newRepos ) {
+          for( var i = 0; i < newRepos.length; i++ ) {
+            for( var j = 0; j < insertLater.length; j++ ) {
+              if( insertLater[ j ][ "parent" ] === newRepos[ i ][ "name" ] ) {
+                insertChild( newRepos[ i ], insertLater.splice( j )[ 0 ]  );
+              }
+            }
+            if( newRepos[ i ][ "parent" ] ) {
+              var repoParent = findRepo( repoDescription, newRepos[ i ][ "parent" ] );
+              if( repoParent ) {
+                insertChild( repoParent, newRepos[ i ] );
+              } else{
+                var insertLaterParent = findRepo( insertLater, newRepos[ i ][ "parent" ] );
+                if( insertLaterParent ) {
+                  insertChild( insertLaterParent, newRepos[ i ] );
+                } else {
+                  insertLater.push( newRepos[ i ] );
+                }
+              }
+            } else {
+              var existingRepo = findRepo( repoDescription, newRepos[ i ][ "name" ] );
+              if( existingRepo ) {
+                merge( existingRepo, newRepos[ i ] );
+              } else {
+                var existingInsertLaterRepo = findRepo( insertLater, newRepos[ i ][ "name" ] );
+                if( existingInsertLaterRepo ) {
+                  merge( existingInsertLaterRepo, newRepos[ i ] );
+                } else {
+                  repoDescription.push( newRepos[ i ] );
+                }
+              }
+            }
+          }
+        }
+
+        function insertChild( parent, child ) {
+          if( parent[ "children" ] ) {
+            var existingChild = findChild( parent[ "children" ], child[ "name" ] );
+            if( existingChild ) {
+              existingChild = merge( existingChild, child );
+            } else {
+              parent[ "children" ].push( child );
+            }
+          } else {
+            parent[ "children" ] = [ child ];
+          }
+        }
+
+        function findRepo( arr, key ) {
+          for( var i = 0; i < arr.length; i++ ) {
+            if( key === arr[ i ][ "name" ] ) {
+              return arr[ i ];
+            } else if( arr[ i ][ "children" ] ) {
+              var result = findRepo( arr[ i ][ "children" ], key );
+              if( result || i === arr.length -1 ) {
+                return result;
+              }
+            }
+          }
+          return null;
+        }
+
+        function findChild( children, key ) {
+          var result = null;
+          for( var i = 0; i < children.length; i++ ) {
+            if( children[ i ][ "name" ] === key ) {
+              result = children[ i ];
+            }
+          }
+          return result;
+        }
+
+        function merge( existingObj, newObj ) {
+          for( var key in newObj ) {
+            if( !existingObj[ key ] ) {
+              existingObj[ key ] = newObj[ key ];
+            }
+          }
+        }
+
+      } );
+
+    </script>
+  </head>
+  <body>
+    <textarea id="json-output" rows="20" cols="100"></textarea>
+  </body>
+</html>

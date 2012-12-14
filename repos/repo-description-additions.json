@@ -1,32 +1,61 @@
 [
+
+  {
+    "name" : "ecosystem",
+    "parent" : "toolchain",
+    "incubating" : true
+  },
+
+  {
+    "name" : "openetcs.github.com",
+    "parent" : "management"
+  },
+
   {
     "name" : "template",
+    "parent" : "ecosystem",
     "mailinglist" : "",
     "incubating" : true
   },
+
   {
     "name" : "playground",
+    "parent" : "ecosystem",
     "mailinglist" : "",
     "incubating" : true
   },
+
   {
     "name" : "management",
     "description" : "Work Package 1 Top Level Project",
-    "html_url" : "https://github.com/openETCS/management"
+    "html_url" : "https://github.com/openETCS/management",
+    "incubating" : true
   },
+
   {
     "name" : "toolchain",
     "description" : "Work Package 3a Top Level Project",
-    "html_url" : "https://github.com/openETCS/toolchain"
+    "html_url" : "https://github.com/openETCS/toolchain",
+    "incubating" : true
   },
+
+  {
+    "name" : "requirements",
+    "incubating" : true
+  },
+
   {
     "name" : "validation",
     "description" : "Work Package 4 Top Level Project",
-    "html_url" : "https://github.com/openETCS/validation"
+    "html_url" : "https://github.com/openETCS/validation",
+    "incubating" : true
   },
+
   {
     "name" : "dissemination",
     "description" : "Work Package 6 Top Level Project",
-    "html_url" : "https://github.com/openETCS/validation"
+    "html_url" : "https://github.com/openETCS/validation",
+    "incubating" : true
   }
+
 ]
