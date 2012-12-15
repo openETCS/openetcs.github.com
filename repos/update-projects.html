@@ -86,9 +86,9 @@
             if( key === arr[ i ][ "name" ] ) {
               return arr[ i ];
             } else if( arr[ i ][ "children" ] ) {
-              var result = findRepo( arr[ i ][ "children" ], key );
-              if( result || i === arr.length -1 ) {
-                return result;
+              var recursCallResult = findRepo( arr[ i ][ "children" ], key );
+              if( recursCallResult ) {
+                return recursCallResult;
               }
             }
           }
