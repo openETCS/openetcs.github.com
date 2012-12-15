@@ -19,7 +19,7 @@ The folder contains three *JSON* files:
 
 To edit the project descriptions, open the file *repo-description-additions.json*. The file can be edited directly on github:
 
-![repo-description-additions.json in github editor](http://www.openetcs.com/readme-img/repo-1.png "Github file editor")
+![repo-description-additions.json in github editor](https://raw.github.com/openETCS/openetcs.github.com/master/readme-img/repo-1.png "Github file editor")
 
 Each project description is surrounded by curly brackets { }:
 
@@ -40,13 +40,13 @@ Most of the data is taken from the generated github file and does not have to be
 
 After updating the project descriptions hit **Commit Changes**:
 
-![repo-description-additions.json in github editor](http://www.openetcs.com/readme-img/repo-2.png "Save changes")
+![repo-description-additions.json in github editor](https://raw.github.com/openETCS/openetcs.github.com/master/readme-img/repo-2.png "Save changes")
 
 ### Generate and update *repo-description-merged.json*
 
 Now the file *repo-description-merged.json* needs to be updated. To do so, open [this website](http://openetcs.org/repos/update-projects.html). Copy the generated data from the textfield (*right-click --> select all* and then *right-click --> copy*)
 
-![copy generated data](http://www.openetcs.com/readme-img/repo-3.png "copy generated data")
+![copy generated data](https://raw.github.com/openETCS/openetcs.github.com/master/readme-img/repo-3.png "copy generated data")
 
 After copying the generated data, return to github.com and open the file *repo-description-merged.json*. Replace the old content by the newly generated data and hit **Commit Changes**.
 
