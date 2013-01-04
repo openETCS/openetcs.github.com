@@ -19,7 +19,7 @@
             updateRepoDescription( repoDescription, repos );
           },
           error: function( err ) {
-            alert( "Es ist ein Fehler aufgetreten. Bitte überprüfen Sie die Projektbeschreibung." );
+            alert( "Error: Could not fetch json." );
           }
         } );
 
@@ -30,6 +30,9 @@
           success : function( repos ) {
             updateRepoDescription( repoDescription, repos );
             $( "#json-output" ).append( JSON.stringify( repoDescription ) );
+          },
+          error: function( err ) {
+            alert( "Error: Could not fetch json." );
           }
         } );
 
