@@ -26,10 +26,7 @@ title: openETCS Projects
         projectItem.append( "<span class='icon-beaker' title='This project currently is in incubator status'></span>" );
       }
       if( repo[ "has_wiki" ] ) {
-        projectItem.append( "<span class='icon-info-sign' title='This project has a wiki'></span>" );
-      }
-      if( repo[ "open_issues_count" ] ) {
-        projectItem.append( "<span title='open issues: " + repo[ "open_issues_count" ] + "' style='color:rgb(200,0,0)'><span class='icon-github'></span>" + repo[ "open_issues_count" ] + "</span>" );
+        projectItem.append( "<a href='" + repo[ "html_url" ]  + "/wiki'><span class='icon-info-sign' title='Go to project wiki'></span></a>" );
       }
       if( repo[ "mailinglist" ] ) {
         projectItem.append( "<a title='mailing list' href='" + repo[ "mailinglist" ] + "'><span class='icon-envelope'></span></a>" );
