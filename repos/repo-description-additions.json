@@ -8,8 +8,19 @@
   },
   
   {
+    "name" : "model-evaluation",
+    "parent" : "toolchain",
+    "incubating" : true
+  },
+  {
+    "name" : "PCA",
+    "parent" : "management",
+    "incubating" : true
+  },
+  
+  {
     "name" : "methodology-report",
-    "parent" : "validation",
+    "parent" : "requirements",
     "incubating" : true
   },
   
