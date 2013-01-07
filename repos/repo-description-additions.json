@@ -5,6 +5,12 @@
     "parent" : "toolchain",
     "incubating" : true
   },
+  
+  {
+    "name" : "v-v-report",
+    "parent" : "validation",
+    "incubating" : true
+  },
 
   {
     "name" : "openetcs.github.com",
