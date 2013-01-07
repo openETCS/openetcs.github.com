@@ -40,7 +40,7 @@
           for( var i = 0; i < newRepos.length; i++ ) {
             for( var j = 0; j < insertLater.length; j++ ) {
               if( insertLater[ j ][ "parent" ] === newRepos[ i ][ "name" ] ) {
-                insertChild( newRepos[ i ], insertLater.splice( j )[ 0 ]  );
+                insertChild( newRepos[ i ], insertLater[ j ]  );
               }
             }
             if( newRepos[ i ][ "parent" ] ) {
