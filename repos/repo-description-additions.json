@@ -3,6 +3,7 @@
   {
     "name" : "ecosystem",
     "parent" : "toolchain",
+    "mailinglist" : "mailto:ecosystem@openetcs.org",
     "incubating" : true
   },
   
@@ -20,7 +21,7 @@
   {
     "name" : "template",
     "parent" : "ecosystem",
-    "mailinglist" : "ecosystem@openetcs.org",
+    "mailinglist" : "",
     "incubating" : true
   },
 
