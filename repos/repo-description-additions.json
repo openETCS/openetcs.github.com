@@ -3,6 +3,19 @@
   {
     "name" : "ecosystem",
     "parent" : "toolchain",
+    "mailinglist" : "mailto:ecosystem@openetcs.org",
+    "incubating" : true
+  },
+  
+  {
+    "name" : "methodology-report",
+    "parent" : "validation",
+    "incubating" : true
+  },
+  
+  {
+    "name" : "v-v-report",
+    "parent" : "validation",
     "incubating" : true
   },
 
