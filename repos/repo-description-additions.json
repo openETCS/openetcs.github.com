@@ -14,7 +14,7 @@
   {
     "name" : "template",
     "parent" : "ecosystem",
-    "mailinglist" : "",
+    "mailinglist" : "ecosystem@openetcs.org",
     "incubating" : true
   },
 
