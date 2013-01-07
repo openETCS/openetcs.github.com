@@ -8,6 +8,12 @@
   },
   
   {
+    "name" : "methodology-report",
+    "parent" : "validation",
+    "incubating" : true
+  },
+  
+  {
     "name" : "v-v-report",
     "parent" : "validation",
     "incubating" : true
