@@ -76,9 +76,9 @@
   },
 
   {
-    "name" : "dissemination",
+    "name" : "Dissemination",
     "description" : "Work Package 6 Top Level Project",
-    "html_url" : "https://github.com/openETCS/validation",
+    "html_url" : "https://github.com/openETCS/Dissemination",
     "incubating" : true
   }
 
