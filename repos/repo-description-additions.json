@@ -17,6 +17,11 @@
     "parent" : "management",
     "incubating" : true
   },
+  {
+    "name" : "CENELEC-compliance-report",
+    "parent" :"requirements",
+    "incubating" : true
+  },
   
   {
     "name" : "methodology-report",
