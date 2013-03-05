@@ -56,7 +56,7 @@
 
   {
     "name" : "management",
-    "description" : "Work Package 1 Top Level Project",
+    "description" : "WP1: Top Level Project",
     "html_url" : "https://github.com/openETCS/management",
     "incubating" : true
   },
