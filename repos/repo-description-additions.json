@@ -37,11 +37,13 @@
     "parent" : "toolchain",
     "incubating" : true
   },
+  
   {
     "name" : "PCA",
     "parent" : "management",
     "incubating" : true
   },
+  
   {
     "name" : "CENELEC-compliance-report",
     "parent" :"requirements",
@@ -93,6 +95,6 @@
     "description" : "Work Package 6 Top Level Project",
     "html_url" : "https://github.com/openETCS/Dissemination",
     "incubating" : true
-  }
+  },
 
 ]
