@@ -27,7 +27,7 @@
 
   {
     "name" : "ecosystem",
-    "parent" : "toolchain",
+    "parent" : "management",
     "mailinglist" : "mailto:ecosystem@openetcs.org",
     "incubating" : true
   },
