@@ -1,8 +1,33 @@
 [
+ {
+    "name" : "management",
+    "description" : "WP1: Top Level Project",
+    "html_url" : "https://github.com/openETCS/management",
+    "incubating" : true
+  },
+  
+  {
+    "name" : "requirements",
+    "incubating" : true
+  },
+
+  {
+    "name" : "toolchain",
+    "description" : "Work Package 3a Top Level Project",
+    "html_url" : "https://github.com/openETCS/toolchain",
+    "incubating" : true
+  },
+
+  {
+    "name" : "validation",
+    "description" : "Work Package 4 Top Level Project",
+    "html_url" : "https://github.com/openETCS/validation",
+    "incubating" : true
+  },
 
   {
     "name" : "ecosystem",
-    "parent" : "toolchain",
+    "parent" : "management",
     "mailinglist" : "mailto:ecosystem@openetcs.org",
     "incubating" : true
   },
@@ -54,31 +79,6 @@
     "incubating" : true
   },
 
-  {
-    "name" : "management",
-    "description" : "WP1: Top Level Project",
-    "html_url" : "https://github.com/openETCS/management",
-    "incubating" : true
-  },
-
-  {
-    "name" : "toolchain",
-    "description" : "Work Package 3a Top Level Project",
-    "html_url" : "https://github.com/openETCS/toolchain",
-    "incubating" : true
-  },
-
-  {
-    "name" : "requirements",
-    "incubating" : true
-  },
-
-  {
-    "name" : "validation",
-    "description" : "Work Package 4 Top Level Project",
-    "html_url" : "https://github.com/openETCS/validation",
-    "incubating" : true
-  },
   {
     "name" : "internal assessment",
     "parent" : "validation",
