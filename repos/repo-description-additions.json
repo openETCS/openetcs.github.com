@@ -82,7 +82,7 @@
   },
 
   {
-    "name" : "internal assessment",
+    "name" : "internal-assessment",
     "parent" : "validation",
     "description" : "part of WP4: collects activities for internal project assessment task",
     "incubating" : true,
