@@ -1,7 +1,6 @@
 [
  {
     "name" : "management",
-    "description" : "WP1: Top Level Project",
     "html_url" : "https://github.com/openETCS/management",
     "incubating" : true
   },
@@ -13,14 +12,18 @@
 
   {
     "name" : "toolchain",
-    "description" : "Work Package 3a Top Level Project",
     "html_url" : "https://github.com/openETCS/toolchain",
     "incubating" : true
   },
 
   {
+    "name" : "eclipse-platform-evaluation",
+    "parent" : "validation",
+    "incubating" : true
+  },
+
+  {
     "name" : "validation",
-    "description" : "Work Package 4 Top Level Project",
     "html_url" : "https://github.com/openETCS/validation",
     "incubating" : true
   },
@@ -39,7 +42,7 @@
   },
   
   {
-    "name" : "PCA",
+    "name" : "government",
     "parent" : "management",
     "incubating" : true
   },
@@ -58,6 +61,12 @@
   
   {
     "name" : "v-v-report",
+    "parent" : "validation",
+    "incubating" : true
+  },
+
+  {
+    "name" : "identification-of-tools-and-profile-usage",
     "parent" : "validation",
     "incubating" : true
   },
@@ -84,7 +93,6 @@
   {
     "name" : "internal-assessment",
     "parent" : "validation",
-    "description" : "part of WP4: collects activities for internal project assessment task",
     "incubating" : true,
     "html_url" : "https://github.com/openETCS/internal-assessment"
 
