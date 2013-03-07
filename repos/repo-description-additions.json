@@ -1,8 +1,14 @@
 [
+
  {
     "name" : "management",
-    "html_url" : "https://github.com/openETCS/management",
-    "incubating" : true
+    "description" : "project description",
+    "private" : true,
+    "incubating" : true,
+    "has_wiki" : true,
+    "open_issues_count" : 5,
+    "mailinglist" : "mailto:wp1@openetcs.org",
+    "html_url" : "https://github.com/openETCS/management"
   },
   
   {
@@ -17,15 +23,26 @@
   },
 
   {
-    "name" : "eclipse-platform-evaluation",
-    "parent" : "validation",
-    "incubating" : true
+    "name" : "validation",
+    "description" : "project description",
+    "private" : true,
+    "incubating" : true,
+    "has_wiki" : true,
+    "open_issues_count" : 5,
+    "mailinglist" : "mailto:wp4@openetcs.org",
+    "html_url" : "https://github.com/openETCS/management"
   },
 
   {
-    "name" : "validation",
-    "html_url" : "https://github.com/openETCS/validation",
-    "incubating" : true
+    "name" : "eclipse-platform-evaluation",
+    "parent" : "validation",
+    "description" : "project description",
+    "private" : true,
+    "incubating" : true,
+    "has_wiki" : true,
+    "open_issues_count" : 5,
+    "mailinglist" : "mailto:wp4@openetcs.org",
+    "html_url" : "https://github.com/openETCS/management"
   },
 
   {
