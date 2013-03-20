@@ -2,7 +2,7 @@
 
  {
     "name" : "management",
-    "description" : "project description",
+    "description" : "important management informnation not meant for the public, e.g., names and responsibilities",
     "private" : true,
     "incubating" : true,
     "has_wiki" : true,
@@ -24,7 +24,7 @@
 
   {
     "name" : "validation",
-    "description" : "project description",
+    "description" : "WP4: verification & validation",
     "private" : true,
     "incubating" : true,
     "has_wiki" : true,
@@ -59,7 +59,7 @@
   },
   
   {
-    "name" : "government",
+    "name" : "governance",
     "parent" : "management",
     "incubating" : true
   },
