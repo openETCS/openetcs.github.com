@@ -19,6 +19,7 @@
 
   {
     "name" : "modeling",
+    "description" : "WP3: modeling work for our ETCS standard",
     "incubating" : true
   },
 
@@ -32,6 +33,13 @@
     "mailinglist" : "mailto:wp4@openetcs.org",
     "html_url" : "https://github.com/openETCS/management"
   },
+  
+ {
+    "name" : "ecosystem",
+    "mailinglist" : "mailto:ecosystem@openetcs.org",
+    "incubating" : true
+  },
+  
 
   {
     "name" : "eclipse-platform-evaluation",
