@@ -1,15 +1,10 @@
 [
 
  {
-    "name" : "management",
-    "description" : "important management informnation not meant for the public, e.g., names and responsibilities",
-    "private" : true,
-    "incubating" : true,
-    "has_wiki" : true,
-    "open_issues_count" : 5,
-    "mailinglist" : "mailto:wp1@openetcs.org",
-    "html_url" : "https://github.com/openETCS/management"
-  },
+    "name" : "governance",
+    "description" : "WP1: information related to communication, planning and quality assurance",
+    "incubating" : true
+ },
   
   {
     "name" : "requirements",
@@ -46,21 +41,8 @@
   },
 
   {
-    "name" : "ecosystem",
-    "parent" : "management",
-    "mailinglist" : "mailto:ecosystem@openetcs.org",
-    "incubating" : true
-  },
-  
-  {
     "name" : "model-evaluation",
     "parent" : "toolchain",
-    "incubating" : true
-  },
-  
-  {
-    "name" : "governance",
-    "parent" : "management",
     "incubating" : true
   },
   
@@ -94,20 +76,6 @@
   },
 
   {
-    "name" : "template",
-    "parent" : "ecosystem",
-    "mailinglist" : "",
-    "incubating" : true
-  },
-
-  {
-    "name" : "playground",
-    "parent" : "ecosystem",
-    "mailinglist" : "",
-    "incubating" : true
-  },
-
-  {
     "name" : "internal-assessment",
     "parent" : "validation",
     "incubating" : true,
@@ -119,6 +87,38 @@
     "name" : "Dissemination",
     "description" : "Work Package 6 Top Level Project",
     "html_url" : "https://github.com/openETCS/Dissemination",
+    "incubating" : true
+  },
+
+  {
+    "name" : "management",
+    "description" : "important private in project management information not meant for the public, e.g., names and responsibilities",
+    "private" : true,
+    "incubating" : true,
+    "has_wiki" : true,
+    "open_issues_count" : 5,
+    "mailinglist" : "mailto:wp1@openetcs.org",
+    "html_url" : "https://github.com/openETCS/management"
+  },
+
+  {
+    "name" : "ecosystem",
+    "parent" : "management",
+    "mailinglist" : "mailto:ecosystem@openetcs.org",
+    "incubating" : true
+  },
+  
+  {
+    "name" : "template",
+    "parent" : "ecosystem",
+    "mailinglist" : "",
+    "incubating" : true
+  },
+
+  {
+    "name" : "playground",
+    "parent" : "ecosystem",
+    "mailinglist" : "",
     "incubating" : true
   }
 
