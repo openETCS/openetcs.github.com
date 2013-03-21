@@ -34,13 +34,6 @@
     "html_url" : "https://github.com/openETCS/management"
   },
   
- {
-    "name" : "ecosystem",
-    "mailinglist" : "mailto:ecosystem@openetcs.org",
-    "incubating" : true
-  },
-  
-
   {
     "name" : "eclipse-platform-evaluation",
     "parent" : "validation",
@@ -116,7 +109,6 @@
 
   {
     "name" : "ecosystem",
-    "parent" : "management",
     "mailinglist" : "mailto:ecosystem@openetcs.org",
     "incubating" : true
   },
