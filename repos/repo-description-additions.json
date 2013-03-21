@@ -78,7 +78,7 @@
 
   {
     "name" : "openetcs.github.com",
-    "parent" : "management"
+    "parent" : "governance"
   },
 
   {
@@ -109,6 +109,7 @@
 
   {
     "name" : "ecosystem",
+    "description" : "some parts to provide the infrastructure",
     "mailinglist" : "mailto:ecosystem@openetcs.org",
     "incubating" : true
   },
