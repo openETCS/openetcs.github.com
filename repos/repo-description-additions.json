@@ -18,6 +18,11 @@
   },
 
   {
+    "name" : "modeling",
+    "incubating" : true
+  },
+
+  {
     "name" : "validation",
     "description" : "WP4: verification & validation",
     "private" : true,
