@@ -1,25 +1,38 @@
 [
+  {
+    "name" : "openetcs.github.com",
+    "mailinglist" : "mailto:projectoffice@openetcs.org"
+  },
+
 
  {
     "name" : "governance",
     "description" : "WP1: information related to communication, planning and quality assurance",
+    "mailinglist" : "mailto:projectoffice@openetcs.org",
+    "has_wiki" : true,
     "incubating" : true
  },
   
   {
     "name" : "requirements",
+    "mailinglist" : "mailto:wp2@openetcs.org",
+    "has_wiki" : true,
     "incubating" : true
   },
 
   {
     "name" : "toolchain",
     "html_url" : "https://github.com/openETCS/toolchain",
-    "incubating" : true
+    "mailinglist" : "mailto:wp7@openetcs.org",
+    "has_wiki" : true,
+     "incubating" : true
   },
 
   {
     "name" : "modeling",
     "description" : "WP3: modeling work for our ETCS standard",
+    "mailinglist" : "mailto:wp3@openetcs.org",
+    "has_wiki" : true,
     "incubating" : true
   },
 
@@ -36,19 +49,20 @@
   
   {
     "name" : "eclipse-platform-evaluation",
-    "parent" : "validation",
+    "parent" : "toolchain",
     "description" : "project description",
     "private" : true,
     "incubating" : true,
     "has_wiki" : true,
     "open_issues_count" : 5,
-    "mailinglist" : "mailto:wp4@openetcs.org",
+    "mailinglist" : "mailto:eclipse-platform-evaluation@openetcs.org",
     "html_url" : "https://github.com/openETCS/management"
   },
 
   {
     "name" : "model-evaluation",
     "parent" : "toolchain",
+    "mailinglist" : "mailto:model-evaluation@openetcs.org",
     "incubating" : true
   },
   
@@ -74,11 +88,6 @@
     "name" : "identification-of-tools-and-profile-usage",
     "parent" : "validation",
     "incubating" : true
-  },
-
-  {
-    "name" : "openetcs.github.com",
-    "parent" : "governance"
   },
 
   {
