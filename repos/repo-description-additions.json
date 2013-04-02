@@ -117,6 +117,14 @@
   },
 
   {
+    "name" : "ERTMSFormalSpecs",
+    "description" : "ERTMSFormalSpecs provides the model and a toolbox for onboard ERTMS subsystem",
+    "has_wiki" : true,
+    "open_issues_count" : 5,
+    "incubating" : true
+  },
+
+  {
     "name" : "ecosystem",
     "description" : "some parts to provide the infrastructure",
     "mailinglist" : "mailto:ecosystem@openetcs.org",
