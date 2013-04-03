@@ -7,7 +7,7 @@ title: openETCS.org Terms of Use
 
 h1. openETCS.org Terms of Use
 
-20th July, 2012
+(Version 0.1, April 4th, 2013)
 
 h3. Terms and Conditions of Use for the openETCS Web Site
 
