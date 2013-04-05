@@ -3,6 +3,16 @@ layout: default
 title: testDesign
 ---
 <script type="text/javascript">
+  function treeMenu_store(menu) {
+        var result = new Array();;
+            var items = menu.getElementsByTagName("li");
+                for(var i = 0; i < items.length; i++) {
+                      if(treeMenu_contains(treeMenu_getClasses(items[i]), "treeMenu_opened")) {
+                              result.push(i);
+                                    }
+                                        }
+                                            return result.join(" ");
+                                              }
 </script>
 <div id="slideshow">  
 
