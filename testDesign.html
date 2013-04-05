@@ -3,6 +3,71 @@ layout: default
 title: testDesign
 ---
 <script type="text/javascript">
+  function treeMenu_init(menu, data) {
+        var array = new Array(0);
+            if(data != null && data != "") {
+                  array = data.match(/\d+/g);
+                      }
+                          var items = menu.getElementsByTagName("li");
+                              for(var i = 0; i < items.length; i++) {
+                                    items[i].onclick = treeMenu_handleClick;
+                                          if(!treeMenu_contains(treeMenu_getClasses(items[i]), "treeMenu_opened")
+                                                    && items[i].getElementsByTagName("ul").length
+                                                                + items[i].getElementsByTagName("ol").length > 0) {
+                                                                        var classes = treeMenu_getClasses(items[i]);
+                                                                                if(array.length > 0 && array[0] == i) {
+                                                                                          classes.push("treeMenu_opened")
+                                                                                                  }
+                                                                                                          else {
+                                                                                                                    classes.push("treeMenu_closed")
+                                                                                                                            }
+                                                                                                                                    items[i].className = classes.join(" ");
+                                                                                                                                            if(array.length > 0 && array[0] == i) {
+                                                                                                                                                      array.shift();
+                                                                                                                                                              }
+                                                                                                                                                                    }
+                                                                                                                                                                        }
+                                                                                                                                                                          }
+  function treeMenu_handleClick(event) {
+        if(event == null) { 
+        
+              event = window.event;
+                    event.currentTarget = event.srcElement;
+                          while(event.currentTarget.nodeName.toLowerCase() != "li") {
+                                  event.currentTarget = event.currentTarget.parentNode;
+                                        }
+                                              event.cancelBubble = true;
+                                                  }
+                                                      else {
+                                                            event.stopPropagation();
+                                                                }
+                                                                    var array = treeMenu_getClasses(event.currentTarget);
+                                                                        for(var i = 0; i < array.length; i++) {
+                                                                              if(array[i] == "treeMenu_closed") {
+                                                                                      array[i] = "treeMenu_opened";
+                                                                                            }
+                                                                                                  else if(array[i] == "treeMenu_opened") {
+                                                                                                          array[i] = "treeMenu_closed"
+                                                                                                                }
+                                                                                                                    }
+                                                                                                                        event.currentTarget.className = array.join(" ");
+                                                                                                                          }
+  function treeMenu_getClasses(element) {
+        if(element.className) {
+              return element.className.match(/[^ \t\n\r]+/g);
+                  }
+                      else {
+                            return new Array(0);
+                                }
+                                  }
+  function treeMenu_contains(array, element) {
+        for(var i = 0; i < array.length; i++) {
+              if(array[i] == element) {
+                      return true;
+                            }
+                                }
+                                    return false;
+                                      }
   function treeMenu_store(menu) {
         var result = new Array();;
             var items = menu.getElementsByTagName("li");
