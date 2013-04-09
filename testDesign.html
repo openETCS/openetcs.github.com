@@ -1,27 +1,62 @@
 ---
 layout: default
-title: testDesign
+title: European Train Control System. Open Proof. Open Source.
 ---
+<div class="row">
+    <div class="span6">
+      <h1>
+        European Train Control System (ETCS)<br />
+        Open Proofs - Open Source
+      </h1>
+        <p style="padding-bottom: 20px">
+            <img src="/images/ice.jpg"/>
+        </p>
+      <p>
+        The purpose of the openETCS project is to develop an integrated modeling, development, validation and testing framework for leveraging the cost-efficient and reliable implementation of ETCS. The framework will provide a holistic tool chain across the whole development process of ETCS software. The tool chain will support the formal specification and verification of the ETCS system requirements, the automatic and ETCS compliant code generation and validation, and the model-based test case generation and execution.
+      </p>
+    </div>
+    <div class="span3 events">
+        <h2><a href="http://openetcs.org/calendar">Upcoming Events</a></h2>
+        <div id="blog-posts"></div>
+    </div>
+</div>
 
-<div id="slideshow">  
 
 
+<div class="row">
 
-  <h1>Resources that describe our guiding principles</h1> 
-  <p>    Did you know that everybody can participate? Learn about our processes:  </p>
+  <div class="feature span3">
+      <h2>Specification</h2>
+      <p>
+        openETCS will utilize “Open Standards” on all levels, including hardware and software specification, interface definition, design tools, verification and validation procedures and last but not least embedded control software. By applying those technologies and related business concepts a significant cost cut for the final onboard product is expected down to or even below conventional high performance cab signaling systems (e.g. LZB Linien-Zug-Beeinflussung, as used in Germany, Austria and Spain).
+      </p>
+  </div>
 
-<ul id="navigation">   
-<li>                   projects             </li>        
-<li>               principles     
-<ul class="second-level-nav">        
-<li>               Open Source                  </li>                  
-<li>                       Resources            </li>                </ul>      
-</li>        
-<li>                  members                        </li>        
-<li>                      about             
-<ul class="second-level-nav">                
-<li>                       Who we are                              </li>          
-<li>                        Contact                    </li>         
-</ul>              </li>            </ul>
-  
-</div> 
+  <div class="feature span3">
+      <h2>Implementation</h2>
+      <p>
+        The openECTS project aims to provide the formal model of the ETCS system, the source code of the ETCS software and the tool chain necessary to develop and verify them. This tool chain will enable to transfer the ETCS specification into a formal model  and then to generate the code for an ETCS onboard unit. In parallel to the development openETCS aims to establish an open-source ecosystem of services around the developed artifacts.
+      </p>
+  </div>
+
+  <div class="feature span3">
+      <h2>V & V</h2>
+      <p>
+        The open source concept provides for a neutral and formal method based “correct” functioning reference device that will help to overcome existing interoperability problems, supporting manufacturers, infrastructure managers and railway undertakings alike, avoiding exhaustive field tests, transferring verification and validation activities from the track site into laboratories, saving scarce resources and finally accelerating the migration phase and therefore supporting the European ERTMS deployment plan.
+      </p>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+
+  $( '#blog-posts' ).rssfeed( 'http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fopenetcs.org_jid53p4912jvefdte5bte0lbdg@group.calendar.google.com%2Fpublic%2Ffull?sortorder=ascending', {
+    limit: 4,
+    header : false,
+    key : "ABQIAAAADaXzprMke0eXhl5lyjwBJhQirors1Oy_y16QJctfjrSpBJX32hS_wL3O0Tk2wYierOO2_dXAoE0AMQ",
+    titletag : "h3",
+    date : false,
+    content : true
+  } );
+
+</script>
