@@ -115,6 +115,13 @@
     "mailinglist" : "mailto:wp1@openetcs.org",
     "html_url" : "https://github.com/openETCS/management"
   },
+    {    
+      "name" : "SSRS", 
+      "description" : "As long as the proper ownership is not clarified WP1 will take care of it.",
+      "parent" : "managemant",    
+      "has_wiki" : true,    
+      "incubating" : true  
+      },
 
   {
     "name" : "ERTMSFormalSpecs",
