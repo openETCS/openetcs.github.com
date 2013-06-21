@@ -39,12 +39,11 @@
   {
     "name" : "validation",
     "description" : "WP4: verification & validation",
-    "private" : true,
     "incubating" : true,
     "has_wiki" : true,
     "open_issues_count" : 5,
     "mailinglist" : "mailto:wp4@openetcs.org",
-    "html_url" : "https://github.com/openETCS/management"
+    "html_url" : "https://github.com/openETCS/validation"
   },
   
   {
