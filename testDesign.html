@@ -1,8 +1,34 @@
 ---
 layout: default
-title: Test members
+title: test
 ---
+<div id="slideshow">
+  <h1>
+    Find information about all openETCS projects.
+  </h1>
+  <p>
+    Every openETCS project has its own project page, containing information on mailing lists, source code, project information (wiki) and issues. Projects, which are initially private, may not be listed.
+  </p>
+  <ul id="plist"></ul>
+<script>
+  function appendProjects( projectList, repoDescription ) {
+    for( var i = 0; i < repoDescription.length; i++ ) {
+      var repo = repoDescription[ i ];
+      var projectItem = $( "<li class='projectItem'></li>" );
+      projectItem.append( "<h2>" + repo[ "name" ] + "</h2>" );
 
- 
-<iframe src="https://www.google.com/calendar/embed?title=openetcs.itea2&amp;height=600&amp;wkst=1&amp;bgcolor=%23c0c0c0&amp;src=openetcs.itea2%40gmail.com&amp;color=%23B1365F&amp;ctz=Europe%2FBerlin" style=" border-width:0 " width="1000" height="900" frameborder="0" scrolling="no"></iframe>
+    }
+  }
 
+  $.ajax({
+      url:'/repos/repo-description-merged.json',
+      type:'GET',
+      dataType: 'json',
+      success: function( repoDescription ) {
+        appendProjects( $( "#plist" ), repoDescription );
+      }
+  });
+
+</script>
+
+</div>
