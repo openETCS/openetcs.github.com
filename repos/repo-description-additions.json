@@ -55,7 +55,7 @@
     "has_wiki" : true,
     "open_issues_count" : 5,
     "mailinglist" : "mailto:eclipse-platform-evaluation@openetcs.org",
-    "html_url" : "https://github.com/openETCS/management"
+    "html_url" : "https://github.com/openETCS/eclipse-platform-evaluation"
   },
 
   {
@@ -103,7 +103,11 @@
     "html_url" : "https://github.com/openETCS/Dissemination",
     "incubating" : true
   },
-
+  {
+    "name" : "dissemination-management",
+    "parent" :"Dissemination",
+    "incubating" : true
+  },
   {
     "name" : "management",
     "description" : "important private in project management information not meant for the public, e.g., names and responsibilities",
