@@ -8,7 +8,8 @@
 
  {
     "name" : "governance",
-    "description" : "WP1: information related to communication, planning and quality assurance",
+    "description" : "part of WP1: information related to communication, planning and quality assurance",
+    "parent" : "management",
     "mailinglist" : "mailto:projectoffice@openetcs.org",
     "has_wiki" : true,
     "incubating" : true
