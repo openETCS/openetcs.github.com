@@ -1,6 +1,7 @@
 [
   {
     "name" : "openetcs.github.com",
+    "parent" : "ecosystem",
     "mailinglist" : "mailto:projectoffice@openetcs.org"
   },
 
