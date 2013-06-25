@@ -52,7 +52,6 @@
     "name" : "eclipse-platform-evaluation",
     "parent" : "toolchain",
     "description" : "project description",
-    "private" : true,
     "incubating" : true,
     "has_wiki" : true,
     "open_issues_count" : 5,
