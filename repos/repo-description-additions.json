@@ -114,6 +114,7 @@
   },
   {
     "name" : "dissemination-management",
+    "description" : "part of WP6: private repository to be used for non-public WP6 artifacts",
     "html_url" : "https://github.com/openETCS/dissemination-managment",
     "private" : true,
     "parent" :"Dissemination",
