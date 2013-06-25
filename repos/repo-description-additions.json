@@ -107,6 +107,15 @@
   },
   {
     "name" : "dissemination-management",
+    "html_url" : "https://github.com/openETCS/dissemination-managment",
+    "private" : true,
+    "parent" :"Dissemination",
+    "incubating" : true
+  },
+{
+    "name" : "glossary",
+    "description" : "part of WP6: Top Level Project",
+    "html_url" : "https://github.com/openETCS/glossary",
     "parent" :"Dissemination",
     "incubating" : true
   },
