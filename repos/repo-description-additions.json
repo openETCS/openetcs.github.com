@@ -14,6 +14,16 @@
     "has_wiki" : true,
     "incubating" : true
  },
+  {
+    "name" : "management",
+    "description" : "WP1: important private in project management information not meant for the public, e.g., names and responsibilities",
+    "private" : true,
+    "incubating" : true,
+    "has_wiki" : true,
+    "open_issues_count" : 5,
+    "mailinglist" : "mailto:wp1@openetcs.org",
+    "html_url" : "https://github.com/openETCS/management"
+  },
   
   {
     "name" : "requirements",
@@ -21,15 +31,6 @@
     "has_wiki" : true,
     "incubating" : true
   },
-
-  {
-    "name" : "toolchain",
-    "html_url" : "https://github.com/openETCS/toolchain",
-    "mailinglist" : "mailto:wp7@openetcs.org",
-    "has_wiki" : true,
-     "incubating" : true
-  },
-
   {
     "name" : "modeling",
     "description" : "WP3: modeling work for our ETCS standard",
@@ -105,6 +106,13 @@
     "incubating" : true
   },
   {
+    "name" : "toolchain",
+    "html_url" : "https://github.com/openETCS/toolchain",
+    "mailinglist" : "mailto:wp7@openetcs.org",
+    "has_wiki" : true,
+     "incubating" : true
+  },
+  {
     "name" : "dissemination-management",
     "html_url" : "https://github.com/openETCS/dissemination-managment",
     "private" : true,
@@ -118,16 +126,7 @@
     "parent" :"Dissemination",
     "incubating" : true
   },
-  {
-    "name" : "management",
-    "description" : "important private in project management information not meant for the public, e.g., names and responsibilities",
-    "private" : true,
-    "incubating" : true,
-    "has_wiki" : true,
-    "open_issues_count" : 5,
-    "mailinglist" : "mailto:wp1@openetcs.org",
-    "html_url" : "https://github.com/openETCS/management"
-  },
+
     {    
       "name" : "SSRS", 
       "description" : "As long as the proper ownership is not clarified WP1 will take care of it.",
