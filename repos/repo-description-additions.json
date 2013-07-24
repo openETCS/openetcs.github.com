@@ -68,12 +68,6 @@
   },
   
   {
-    "name" : "CENELEC-compliance-report",
-    "parent" :"requirements",
-    "incubating" : true
-  },
-  
-  {
     "name" : "methodology-report",
     "parent" : "requirements",
     "incubating" : true
