@@ -40,7 +40,6 @@
   },
   {    
     "name" : "SSRS", 
-    "description" : "T3.?: Sub- System Requirement Specification Work",
     "parent" : "modeling",
     "mailinglist" : "mailto:ssrs@openetcs.org",
     "has_wiki" : true,
@@ -50,7 +49,6 @@
  {
     "name" : "system-specification-model",
     "parent" : "modeling",
-    "description" : "T3.5: The system specification model is a semi-formal model of the Subset26 reference document.",
     "mailinglist" : "mailto:wp3@openetcs.org",
     "has_wiki" : true,
     "incubating" : true
@@ -58,7 +56,6 @@
  {
     "name" : "functional-model",
     "parent" : "modeling",
-    "description" : "T3.6: The functional model is a formal model of the Subset26 reference document.",
     "mailinglist" : "mailto:wp3@openetcs.org",
     "has_wiki" : true,
     "incubating" : true
@@ -66,7 +63,6 @@
  {
     "name" : "system-architecture-model",
     "parent" : "modeling",
-    "description" : "T3.7: The definition of a system architecture model implies first to define the hardware architecture best -fitted to comply with all the Subset 26.",
     "mailinglist" : "mailto:wp3@openetcs.org",
     "has_wiki" : true,
     "incubating" : true
@@ -74,7 +70,6 @@
  {
     "name" : "platform-independent-executable-model",
     "parent" : "modeling",
-    "description" : "T3.8: This model is source code that can run on any platform",
     "mailinglist" : "mailto:wp3@openetcs.org",
     "has_wiki" : true,
     "incubating" : true
